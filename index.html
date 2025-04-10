@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlow – skincare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <!-- navbar -->
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            
+            <div id="nav">
+              <a href="#hero" onclick="closeNav()">Home</a>
+              <a href="#product" onclick="closeNav()">Products</a>
+              <a href="#testimonial" onclick="closeNav()">Testimonials</a>
+              <a href="#about" onclick="closeNav()">About</a>
+              <a href="#shop" onclick="closeNav()">Shop</a>
+            </div>
+        </header>
+        <!-- hero-section -->
+        <section id="hero">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Glow Naturally.Glow Purely.</h1>
+                    <p>Discover the radiance within PureGlow – skincare crafted from nature purest ingreidients.</p>
+                    <div class="buttons">
+                        <a href="#shop" class="buy">Buy Now</a>
+                        <a href="#about" class="learn">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product-section -->
+        <section id="product">
+            <div class="product-section">
+                <h2>Our featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-cards">
+                        <img src="face.jpg" alt="Face cream">
+                        <div class="card-content">
+                            <h3>HydraGlow Face Cream</h2>
+                            <p>Deep Hydration and glowing skin in one luxirous cream.</p>
+                        </div>
+                        <a href="#shop" class="buy">Buy Now</a>
+                    </div>
+
+                <div class="product-cards">
+                    <img src="serum.jpg" alt="Glow serum">
+                    <div class="card-content">
+                        <h3>PureGlow Radiant Serum</h2>
+                        <p>Infused with natural oils and vitamins to brighten and nourish your skin.</p>
+                    </div>
+                    <a href="#shop" class="buy">Buy Now</a>
+                </div>
+        
+
+               <div class="product-cards">
+                <img src="completekit.jpg" alt="Glow Kit">
+                <div class="card-content">
+                    <h3>Complete Glow Kit</h2>
+                    <p>Your all-in-one skincare ritual for luminous healthy skin.</p>
+                </div>
+                <a href="#shop" class="buy">Buy Now</a>
+              </div>
+            </div>
+        </div>
+        </section>
+        <!-- testimonial section -->
+        <section id="testimonial">
+            <div class="testimonial-section">
+                <h2>What People Are Saying</h2>
+                <div class="testimonial-grid">
+                  <div class="testimonial-card">
+                    <p>“PureGlow changed my skincare game! My face feels fresh, smooth, and radiant every single day.”</p>
+                    <h4>– Lila James, Beauty Blogger</h4>
+                  </div>
+                  <div class="testimonial-card">
+                    <p>“I never knew natural products could work this well. PureGlow is my new go-to skincare brand.”</p>
+                    <h4>– Daniel Ade, Skincare Enthusiast</h4>
+                  </div>
+                  <div class="testimonial-card">
+                    <p>“The glow kit is magic! I get compliments on my skin all the time. I’m obsessed!”</p>
+                    <h4>– Mimi Skinfluence, Instagram Influencer</h4>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section id="about">
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                      <h2>About Us</h2>
+                      <p>At <strong>PureGlow Skincare</strong>, we believe in the power of nature to restore your skin’s natural radiance. Our journey began with a simple desire — to create skincare that’s pure, effective, and kind to your skin.</p>
+                      <p>Every product is carefully crafted with clean ingredients and tested for real results. No harsh chemicals, no shortcuts — just honest skincare that lets your glow shine through.</p>
+                      <p>We’re more than a brand — we’re a movement towards confidence, self-care, and beauty in its purest form.</p>
+                    </div>
+                    <div class="about-image">
+                      <img src="brandd.jpg" alt="PureGlow Brand Image">
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!-- newsletter section -->
+        <section id="newsletter-signup">
+         <div class="newsletter-container">
+             <h2>Get 10% Off Your First Order</h2>
+             <p>Join our glow community and be the first to hear about new products, skincare tips, and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        </section>
+        <!-- shop section -->
+        <section id="shop">
+            <div class="product-container">
+
+                <div class="shop-section">
+                  <h2>Our Products</h2>
+            
+                  <div class="shop">
+                    <img src="serum.jpg" alt="Serum">
+                    <div class="shop-info">
+                      <h3>Glow Serum</h3>
+                      <p>$25</p>
+                    </div>
+                    <button onclick="addToCart('Glow Serum', 25)">Add to Cart</button>
+                  </div>
+            
+                  <div class="shop">
+                    <img src="face.jpg" alt="Face-cream">
+                    <div class="shop-info">
+                      <h3>HydraGlow-Face-Cream</h3>
+                      <p>$20</p>
+                    </div>
+                    <button onclick="addToCart('HydraGlow Face-cream', 20)">Add to Cart</button>
+                  </div>
+            
+                  <div class="shop">
+                    <img src="completekit.jpg" alt="completekit">
+                    <div class="shop-info">
+                      <h3>Complete-Glow-kit</h3>
+                      <p>$50</p>
+                    </div>
+                    <button onclick="addToCart('Complete-glow-kit', 50)">Add to Cart</button>
+                  </div>
+                </div>
+            
+                <div class="cart" id="cart">
+                  <h3>Your Cart</h3>
+                  <div id="cart-items"></div>
+                  <div class="cart-total" id="cart-total">Total: $0</div>
+                  <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+                </div>
+            
+              </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+          <!-- Brand Info -->
+          <div class="brand-info">
+            <h3>PureGlow</h3>
+            <p>Glow naturally with skincare powered by nature's purest ingredients.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h4>Contact</h4>
+            <p>Email: support@pureglow.com</p>
+            <p>Phone: +234 809 875 6712</p>
+          </div>
+        </div>
+    
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+    
+        <p>&copy; 2025 PureGlow Skincare. All rights reserved.</p>
+      </footer>
+<!-- javascript -->
+<script>
+function toggleNav() {
+      document.getElementById('nav').classList.toggle('show');
+    }
+
+function closeNav() {
+    document.getElementById('nav').classList.remove('show');
+}
+// shop section
+const cart = {};
+
+function addToCart(product, price) {
+  if (cart[product]) {
+    cart[product].qty += 1;
+  } else {
+    cart[product] = { price, qty: 1 };
+  }
+  updateCart();
+}
+
+function removeFromCart(product) {
+  delete cart[product];
+  updateCart();
+}
+
+function updateCart() {
+  const cartItemsDiv = document.getElementById('cart-items');
+  cartItemsDiv.innerHTML = '';
+  let total = 0;
+
+  for (const [name, item] of Object.entries(cart)) {
+    const itemTotal = item.price * item.qty;
+    total += itemTotal;
+
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'cart-item';
+    itemDiv.innerHTML = `
+      ${name} x${item.qty} - $${itemTotal}
+      <button onclick="removeFromCart('${name}')">x</button>
+    `;
+    cartItemsDiv.appendChild(itemDiv);
+  }
+
+  document.getElementById('cart-total').innerText = `Total: $${total}`;
+}
+
+function checkout() {
+  if (Object.keys(cart).length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  let message = "Hello, I would like to order:\n\n";
+  let total = 0;
+
+  for (const [name, item] of Object.entries(cart)) {
+    message += `- ${name} x${item.qty} = $${item.price * item.qty}\n`;
+    total += item.price * item.qty;
+  }
+
+  message += `\nTotal: $${total}\n\nPlease confirm the order.`;
+
+
+  const phoneNumber = "2348089167511"; 
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
+</body>
+</html>
