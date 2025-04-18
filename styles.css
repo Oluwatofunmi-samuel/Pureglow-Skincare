@@ -10,9 +10,18 @@ body{
     color: #333;
 }
 
+.card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #ff7b6b;  
+}
+
  /*navbar */
  .nav-toggle {
-    position: absolute;
+    position: absolute;   
     top: 30px;
     right: 20px;
     z-index: 1000;
@@ -59,7 +68,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom right, rgba(255, 224, 193, 0.6), rgba(255, 255, 255, 0.6)), url(hero.jpeg);
+    background-image: linear-gradient(to bottom right, rgba(255, 224, 193, 0.6), rgba(255, 255, 255, 0.6)), url(heroj.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +160,6 @@ body{
     padding: 1rem 1rem;
     border: none;
     border-radius: 1.5rem;
-    transition: transform 0.3s ease;
   }
 
   .product-cards img{
@@ -159,10 +167,6 @@ body{
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     object-fit: cover;
-  }
-
-  .product-cards:hover{
-    transform: translateY(-15px);
   }
 
   .card-content{
@@ -192,13 +196,13 @@ body{
   }
 
   .testimonial-card{
-    background-color: rgb(188, 176, 176);
+    background-color: #ff7b6b;
     max-width: 17rem;
     transition: all ease-in 0.3s;
   }
 
   .testimonial-card h4{
-    color: rgb(191, 78, 78);
+    color: white;
   }
 
   .testimonial-card:hover{
@@ -465,7 +469,7 @@ footer p {
 }
   @media (max-width: 768px){
         .hero-section{
-            background-image: linear-gradient(to bottom right, rgba(255, 224, 193, 0.6), rgba(255, 255, 255, 0.6)), url(hero.jpeg);
+            background-image: linear-gradient(to bottom right, rgba(255, 224, 193, 0.6), rgba(255, 255, 255, 0.6)), url(heroj.jpeg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

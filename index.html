@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PureGlow – skincare</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -24,10 +25,10 @@
         <!-- hero-section -->
         <section id="hero">
             <div class="hero-section">
-                <div class="hero-content">
+                <div class="hero-content" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="1500">
                     <h1>Glow Naturally.Glow Purely.</h1>
                     <p>Discover the radiance within PureGlow – skincare crafted from nature purest ingreidients.</p>
-                    <div class="buttons">
+                    <div class="buttons">     
                         <a href="#shop" class="buy">Buy Now</a>
                         <a href="#about" class="learn">Learn more</a>
                     </div>
@@ -39,7 +40,7 @@
             <div class="product-section">
                 <h2>Our featured Products</h2>
                 <div class="product-grid">
-                    <div class="product-cards">
+                    <div class="product-cards card">
                         <img src="face.jpg" alt="Face cream">
                         <div class="card-content">
                             <h3>HydraGlow Face Cream</h2>
@@ -48,7 +49,7 @@
                         <a href="#shop" class="buy">Buy Now</a>
                     </div>
 
-                <div class="product-cards">
+                <div class="product-cards card">
                     <img src="serum.jpg" alt="Glow serum">
                     <div class="card-content">
                         <h3>PureGlow Radiant Serum</h2>
@@ -58,7 +59,7 @@
                 </div>
         
 
-               <div class="product-cards">
+               <div class="product-cards card">
                 <img src="completekit.jpg" alt="Glow Kit">
                 <div class="card-content">
                     <h3>Complete Glow Kit</h2>
@@ -91,9 +92,9 @@
         </section>
         <!-- about section -->
         <section id="about">
-            <div class="about-section">
+            <div class="about-section" >
                 <div class="about-content">
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="1500">
                       <h2>About Us</h2>
                       <p>At <strong>PureGlow Skincare</strong>, we believe in the power of nature to restore your skin’s natural radiance. Our journey began with a simple desire — to create skincare that’s pure, effective, and kind to your skin.</p>
                       <p>Every product is carefully crafted with clean ingredients and tested for real results. No harsh chemicals, no shortcuts — just honest skincare that lets your glow shine through.</p>
@@ -107,7 +108,7 @@
         </section>
         <!-- newsletter section -->
         <section id="newsletter-signup">
-         <div class="newsletter-container">
+         <div class="newsletter-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="1500">
              <h2>Get 10% Off Your First Order</h2>
              <p>Join our glow community and be the first to hear about new products, skincare tips, and exclusive offers.</p>
             <form class="newsletter-form">
@@ -151,7 +152,7 @@
                   </div>
                 </div>
             
-                <div class="cart" id="cart">
+                <div class="cart" id="cart" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300" data-aos-duration="1500">
                   <h3>Your Cart</h3>
                   <div id="cart-items"></div>
                   <div class="cart-total" id="cart-total">Total: $0</div>
@@ -174,9 +175,9 @@
           <div class="quick-links">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#product">Products</a></li>
+              <li><a href="#about">Contact</a></li>
             </ul>
           </div>
     
@@ -268,5 +269,8 @@ function checkout() {
   window.open(whatsappURL, "_blank");
 }
 </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
